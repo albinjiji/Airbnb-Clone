@@ -4,13 +4,14 @@ import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import LanguageIcon from "@material-ui/icons/Language";
-import { Avatar } from "@mui/material";
+import { Avatar, IconButton } from "@mui/material";
 
 function Header() {
   return (
     <div className="header">
       <Link to="/">
         <img
+          className="header_icon"
           src="https://i.pinimg.com/originals/3c/bf/be/3cbfbe148597341fa56f2f87ade90956.png"
           alt="logo"
         />
@@ -20,9 +21,14 @@ function Header() {
         <SearchIcon />
       </div>
       <div className="header_right">
-        <p>Become a host</p>
-        <LanguageIcon />
-        <ExpandMoreIcon />
+        <p className="para">Become a host</p>
+        <IconButton>
+          <LanguageIcon />
+        </IconButton>
+        <IconButton>
+          <ExpandMoreIcon />
+        </IconButton>
+
         <Avatar />
       </div>
     </div>
