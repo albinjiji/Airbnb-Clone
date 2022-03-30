@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="home">
       <Banner />
-      <div className="home__section">
+      <div className="home_section">
         <Card
           src="https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720"
           title="Online Experiences"
@@ -24,7 +24,7 @@ function Home() {
           description="Comfortable private places, with room for friends or family."
         />
       </div>
-      <div className="home__section">
+      <div className="home_section">
         <Card
           src="https://media.nomadicmatt.com/2019/airbnb_breakup3.jpg"
           title="3 Bedroom Flat in Bournemouth"
