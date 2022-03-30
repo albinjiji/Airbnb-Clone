@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Banner.css";
 import { Button } from "@material-ui/core";
 import { useNavigate } from "react-router-dom";
+import Search from "../Search/Search";
 
 function Banner() {
   const history = useNavigate();
@@ -9,7 +10,7 @@ function Banner() {
   return (
     <div className="banner">
       <div className="banner_search">
-        {showSearch && <h1>Search</h1>}
+        {showSearch && <Search />}
 
         <Button
           onClick={() => setShowSearch(!showSearch)}
