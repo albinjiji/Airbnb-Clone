@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Search from "./Components/Search/Search";
 import SearchPage from "./Components/SearchPage/SearchPage";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route exact path="/search" element={<SearchPage />}></Route>
           <Route exact path="/" element={<Home />}></Route>
+          <Route path="/search" element={<SearchPage />}></Route>
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
